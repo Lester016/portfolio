@@ -115,3 +115,16 @@ html.has-scroll-dragging {
   cursor: pointer;
   font-weight: bold;
 }
+
+/* About */
+.about-content {
+  height: 100%;
+}
+
+.about-image-container {
+  height: 100%;
+}
+
+.about-image {
+  height: 100%;
+}
