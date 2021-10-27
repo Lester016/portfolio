@@ -18,14 +18,32 @@
     <script type="module" src="app.js"></script>
   </head>
   <body class="container" data-scroll-container>
+    <!-- Navigation -->
+    <nav class="navbar" data-scroll-section>
+      <a class="navbar-brand">
+        <img
+          src="/src/assets/img/logo.svg"
+          alt=""
+          width="auto"
+          height="75"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+    </nav>
     <!-- Hero -->
-    <section data-scroll-section>
-      <h1 data-scroll>Hello, I'm Lester👋</h1>
-      <h5 data-scroll class="secondary-text">
-        A Software Developer based in Manila
-      </h5>
-      <p class="secondary-text">More about me below, or check out some</p>
-      <p id="projectBtn" class="text-btn">Projects I Built →</p>
+    <section
+      data-scroll-section
+      class="d-flex align-items-center"
+      style="margin-top: -75"
+    >
+      <div>
+        <h1 data-scroll>Hello, I'm Lester👋</h1>
+        <h5 data-scroll class="secondary-text">
+          A Software Developer based in Manila
+        </h5>
+        <p class="secondary-text">More about me below, or check out some</p>
+        <p id="projectBtn" class="text-btn">Projects I Built →</p>
+      </div>
     </section>
     <!-- About -->
     <section data-scroll-section id="about">
