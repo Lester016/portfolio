@@ -128,3 +128,26 @@ html.has-scroll-dragging {
 .about-image {
   height: 100%;
 }
+
+.fixed_wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 600px;
+}
+
+.fixed_target {
+  bottom: -100vh;
+}
+.fixed-bg,
+.fixed_target {
+  position: absolute;
+  top: -100vh;
+  right: 0;
+  left: 0;
+}
+.fixed-bg {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
