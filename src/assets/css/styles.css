@@ -117,37 +117,123 @@ html.has-scroll-dragging {
 }
 
 /* About */
-.about-content {
-  height: 100%;
+.about {
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .about {
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    margin-bottom: 35vh;
+  }
+}
+.about_infos {
+  max-width: 320px;
+  position: relative;
+  z-index: 0;
+}
+@media (min-width: 1000px) {
+  .about_infos {
+    padding-top: 7.5rem;
+  }
+  .about_infos.-padding {
+    padding-top: 35vh;
+  }
+}
+@media (max-width: 999px) {
+  .about_infos {
+    margin-bottom: 1.875rem;
+  }
+}
+.about_infos_inner > * {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+    transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.about_infos_inner.is-inview > * {
+  opacity: 1;
+  transform: none;
+}
+.about_infos_inner.is-inview > :first-child {
+  transition-delay: 0.06s;
+}
+.about_infos_inner.is-inview > :nth-child(2) {
+  transition-delay: 0.12s;
+}
+.about_infos_inner.is-inview > :nth-child(3) {
+  transition-delay: 0.18s;
+}
+.abouts_infos_text {
+  margin-top: 1.25rem;
+}
+.text-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95rem;
+}
+@media (max-width: 699px) {
+  .text-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 700px) {
+  .text-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
-.about-image-container {
-  height: 100%;
+.text-layout {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.about-image {
-  height: 100%;
+.text-layout_item {
+  display: inline-block;
+  font-size: 1rem;
+  padding-left: 0;
+  vertical-align: top;
+  width: 100%;
 }
 
 .fixed_wrapper {
-  position: relative;
+  background-color: #d4c9c9;
   overflow: hidden;
-  height: 100%;
-  width: 900px;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  .fixed_wrapper {
+    height: 100vh;
+  }
+}
+@media (max-width: 999px) {
+  .fixed_wrapper {
+    height: 50vh;
+  }
 }
 
 .fixed_target {
   bottom: -100vh;
 }
-.fixed-bg,
+.fixed-image,
 .fixed_target {
-  position: absolute;
-  top: -100vh;
-  right: 0;
   left: 0;
+  position: absolute;
+  right: 0;
+  top: -100vh;
 }
-.fixed-bg {
-  height: 100%;
+.fixed-image {
+  background-position: 50%;
   background-size: cover;
-  background-position: center;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
 }

@@ -30,37 +30,52 @@
       </div>
     </section>
     <!-- About -->
-    <section
-      data-scroll-section
-      id="about"
-      class="d-flex justify-content-between"
-    >
-      <div class="w-100 m-auto">
-        <div class="w-75">
-          <h1>Text</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium saepe, accusamus soluta qui nam rerum quisquam illo
-            ipsam ea esse tenetur incidunt vel quidem, consectetur eum dolorem
-            alias aliquid. Sequi.
-          </p>
+    <section class="about" data-scroll-section data-persistent>
+      <div class="text-container" id="fixed-elements">
+        <div class="text-layout">
+          <div class="text-layout_item" style="width: 40%">
+            <div
+              class="about_infos -padding"
+              data-scroll
+              data-scroll-sticky
+              data-scroll-target="#fixed-elements"
+            >
+              <div
+                class="about_infos_inner"
+                data-scroll
+                data-scroll-offset="200"
+              >
+                <h3>
+                  04. <br />
+                  Fixed elements
+                </h3>
+                <div class="abouts_infos_text">
+                  <p>
+                    Create slides that stick and untick to the viewport while
+                    scrolling through.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-layout_item" style="width: 60%">
+            <div
+              class="fixed_wrapper"
+              data-scroll
+              data-scroll-call="dynamicBackground"
+              data-scroll-repeat
+            >
+              <div class="fixed_target" id="fixed-target"></div>
+              <div
+                class="fixed-image"
+                data-scroll
+                data-scroll-sticky
+                data-scroll-target="#fixed-target"
+                style="background-image: url('assets/img/profile.jpeg')"
+              ></div>
+            </div>
+          </div>
         </div>
-        <h1>My main stack</h1>
-        <i class="devicon-react-original colored"></i>
-        <i class="devicon-nodejs-plain colored"></i>
-        <i class="devicon-express-original"></i>
-        <i class="devicon-mongodb-plain colored"></i>
-      </div>
-      <div class="fixed_wrapper">
-        <div class="fixed_target" id="fixed-target"></div>
-
-        <div
-          class="fixed-bg"
-          data-scroll
-          data-scroll-sticky
-          data-scroll-target="#fixed-target"
-          style="background-image: url('assets/img/profile.jpeg')"
-        ></div>
       </div>
     </section>
     <!-- Skills -->
