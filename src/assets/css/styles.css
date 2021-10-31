@@ -205,7 +205,7 @@ html.has-scroll-dragging {
 }
 
 .fixed_wrapper {
-  background-color: #d4c9c9;
+  background-color: rgba(0, 0, 0, 0.226);
   overflow: hidden;
   position: relative;
 }
