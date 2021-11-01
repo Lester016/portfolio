@@ -141,7 +141,7 @@ html.has-scroll-dragging {
     padding-top: 7.5rem;
   }
   .about_infos.-padding {
-    padding-top: 35vh;
+    padding-top: 25vh;
   }
 }
 @media (max-width: 999px) {
