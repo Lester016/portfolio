@@ -237,3 +237,11 @@ html.has-scroll-dragging {
   mix-blend-mode: multiply;
   opacity: 0.75;
 }
+
+/* Skills */
+.skills-text {
+}
+
+.skills-icons {
+  max-width: 800px;
+}
