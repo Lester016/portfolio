@@ -239,9 +239,9 @@ html.has-scroll-dragging {
 }
 
 /* Skills */
-.skills-text {
-}
 
-.skills-icons {
-  max-width: 800px;
+.skills-progress {
+  width: 100%;
+}
+.skills-text {
 }
