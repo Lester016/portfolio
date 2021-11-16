@@ -235,7 +235,6 @@ html.has-scroll-dragging {
   background-size: cover;
   height: 100%;
   mix-blend-mode: multiply;
-  opacity: 0.75;
 }
 html:not(.has-scroll-smooth) .fixed-image {
   top: 0;
