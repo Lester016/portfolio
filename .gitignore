@@ -8,3 +8,8 @@ dist/
 
 yarn.lock*
 package-lock.json
+
+# Firebase
+.firebase/
+.firebaserc
+firebase.json
