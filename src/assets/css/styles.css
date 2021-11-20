@@ -9,6 +9,21 @@ section {
 
 i {
   font-size: 35px;
+  margin: 15px;
+}
+
+.icon-container {
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .icon-container {
+    padding: 5px;
+  }
+  i {
+    font-size: 25px;
+    margin: 0;
+  }
 }
 
 /*! locomotive-scroll v4.1.2 */
